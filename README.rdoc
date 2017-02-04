@@ -1,28 +1,18 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The intention of this repo is to integrate/config generic services/gems such as devise,OmniAuth,AWS S3 etc.,
 
-Things you may want to cover:
+Specifications:
 
-* Ruby version
+* Ruby version 2.3.1
 
-* System dependencies
+* Rails version 4.2.7.1
 
-* Configuration
+* Database MySql
 
-* Database creation
+* Integrated Devise Authentication with confirmable email and Facebook login
 
-* Database initialization
+* Configured PaperClip gem to upload files to S3
 
-* How to run the test suite
+* Integrated figaro gem to save sensitive secret ids,Passwords for services like Database, Facebook, AWS S3 etc.,
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
