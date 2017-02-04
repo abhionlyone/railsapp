@@ -34,6 +34,8 @@ gem 'omniauth-twitter'
 gem 'omniauth-linkedin'
 gem 'omniauth-github'
 gem "omniauth-google-oauth2"
+gem 'open_uri_redirections'
+
 
 # Amazon web services
 gem 'aws-sdk'
