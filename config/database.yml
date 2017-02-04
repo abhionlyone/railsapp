@@ -52,3 +52,4 @@ production:
   database: railsapp_production
   username: <%= ENV['RAILSAPP_DATABASE_USERNAME'] %>
   password: <%= ENV['RAILSAPP_DATABASE_PASSWORD'] %>
+  socket: /var/run/mysqld/mysqld.sock
