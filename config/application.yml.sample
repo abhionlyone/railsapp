@@ -1,4 +1,7 @@
 
+# mysqladmin variables | grep socket
+
+
 MAILER_SENDER: 'support@site.com'
 
 #AWS S3 Configuration
@@ -12,8 +15,8 @@ RAILSAPP_DATABASE_USERNAME: ''
 RAILSAPP_DATABASE_PASSWORD: ''
 
 #Facebook App Integration
-FB_APP_ID: ''
-FB_APP_SECRET: ''
+FB_APP_ID: '1135568679899071'
+FB_APP_SECRET: 'fde06af8462f61ed086d71476aaa5a21'
 
 
 HOST: 'localhost'
