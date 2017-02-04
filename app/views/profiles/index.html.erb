@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>All Profiles</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Profile</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @profiles.each do |x| %>
+      <tr>
+        <td><%= x.user.email %></td>
+        <td><a href='/profiles/<%= x.id %>'>Link to Profile</a></td>
+      </tr>
+    <% end %> 
+    </tbody>
+  </table>
+</div>

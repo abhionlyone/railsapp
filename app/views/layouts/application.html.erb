@@ -7,9 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
+<%= render 'layouts/header' %>
+<% if notice %>
+  <div class="alert alert-warning alert-dismissable">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+    <strong>Hi There,</strong> <%= notice %>
+  </div>
+<% elsif alert %>  
+  <div class="alert alert-danger alert-dismissable">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+    <strong>Hi There,</strong> <%= alert %>
+  </div>  
+<% end %>	
 <%= yield %>
 
 </body>

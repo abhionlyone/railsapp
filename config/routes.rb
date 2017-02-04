@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   
+  resources :profiles
   devise_for :users, :controllers => {:omniauth_callbacks => "callbacks", sessions: 'users/sessions', registrations: 'users/registrations', passwords: 'users/passwords'}
-  resources :articles
-  root to: "articles#index"
+  root to: "profiles#index"
+  get '/profile' => 'profiles#my_profile'
   
 
   # Example resource route with options:
