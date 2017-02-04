@@ -10,6 +10,7 @@
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
+MAILER_SENDER: 'support@site.com'
 
 #AWS S3 Configuration
 AWS_S3_REGION: ''
@@ -18,5 +19,9 @@ AWS_ACCESS_KEY_ID: ''
 AWS_SECRET_ACCESS_KEY: ''
 
 #Database Configuration
-RAILSAPP_DATABASE_USERNAME: ''
+RAILSAPP_DATABASE_USERNAME: 'root'
 RAILSAPP_DATABASE_PASSWORD: ''
+
+HOST: 'localhost'
+production:
+  HOST: ''
