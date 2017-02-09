@@ -13,17 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20170204152605) do
 
-  create_table "articles", force: :cascade do |t|
-    t.string   "title",              limit: 255
-    t.text     "body",               limit: 65535
-    t.string   "image_file_name",    limit: 255
-    t.string   "image_content_type", limit: 255
-    t.integer  "image_file_size",    limit: 4
-    t.datetime "image_updated_at"
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
-  end
-
   create_table "profiles", force: :cascade do |t|
     t.integer  "user_id",     limit: 4
     t.text     "description", limit: 65535

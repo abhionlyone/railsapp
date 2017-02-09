@@ -4,11 +4,11 @@ class ProfilesController < ApplicationController
   # GET /profiles
   # GET /profiles.json
   def my_profile
-    if current_user.profile
-      @profile = current_user.profile
-    else
-      @profile = current_user.build_profile
-    end      
+    # if current_user.profile
+    #   @profile = current_user.profile
+    # else
+      @profile = current_user.build_profile unless @profile = current_user.profile
+    # end      
   end
 
   def index
